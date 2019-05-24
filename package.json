@@ -1,0 +1,28 @@
+{
+  "name": "system",
+  "version": "1.0.0",
+  "description": "manage system, vue + bootstrap",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfannie/manageSystem.git"
+  },
+  "author": "annie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfannie/manageSystem/issues"
+  },
+  "homepage": "https://github.com/sfannie/manageSystem#readme",
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express-less": "^0.1.0",
+    "gulp-util": "^3.0.8",
+    "path": "^0.12.7",
+    "underscore": "^1.9.1"
+  }
+}

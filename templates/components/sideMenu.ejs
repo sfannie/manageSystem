@@ -1,0 +1,44 @@
+
+<!-- menu start -->
+<nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <span>
+                            <img alt="image" class="img-circle" src="http://cn.inspinia.cn/html/inspiniaen/img/profile_small.jpg">
+                        </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">王宇</strong>
+                             </span> <span class="text-muted text-xs block">管理员 <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">个人信息</a></li>
+                                <li><a href="contacts.html">好友</a></li>
+                                <li><a href="mailbox.html">信箱</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">登出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    
+                    <li v-for="(item, index) in menuList">
+                        <a href="javascript:void(0)"><i class="fa" :class="item.icon"></i> <span class="nav-label">{{item.name}}</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse" v-if="item.children.length>0">
+                            <li v-for="subItem in item.children"><a href="javascript:void(0);" v-on:click="toggle(item, subItem)">{{subItem.name}}</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="landing_link">
+                        <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">登录</span> <span class="label label-warning pull-right">新</span></a>
+                    </li>
+                    <li class="special_link">
+                        <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">组件</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- menu end -->
